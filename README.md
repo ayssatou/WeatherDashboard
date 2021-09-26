@@ -7,12 +7,9 @@ in the large box, the 5 day forecast is displayed in the smaller grey boxex. </p
 
 <p> The history is saved inside of the local storage and is loaded when the page is refreshed or reopened. </p>
 
-<p> You can access the website at the following live address : <a href="https://ayssatou.github.io/WorkDayScheduler/">https://ayssatou.github.io/WorkDayScheduler/</a></p>
+<p> You can access the website at the following live address : <a href="https://ayssatou.github.io/WeatherDashboard/">https://ayssatou.github.io/WeatherDashboard/</a></p>
 
 <h1> Screenshots </h1>
 
 <p> Main Page </p>
-<img src="assets/images/workscheduler-main.png" title="scheduler-screenshot" alt="Screenshot of the main page of the scheduler"/>
-
-<p> The save buttons </p>
-<img src="assets/images/workscheduler-save.png" title="save-buttons-screenshot" alt="Screenshot of the save buttons"/>
+<img src="assets/images/app-screenshot.png" title="weather-dashboard-screenshot" alt="Screenshot of the main page of the weather dashboard"/>
