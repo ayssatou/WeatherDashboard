@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-colors justify-content-center">
+        <h1><a class="navbar-brand">Weather Dashboard</a></h1>
+    </nav>
+
+    </header>
+
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col-3 leftpan">
+                <h2 class="row search-label">Search for a City:</h2>
+                <input class="row form-control search-input" type="text" id="city" name="city" placeholder="San Diego">
+                <button class="row search-btn btn btn-info" onclick="searchCity()">Search</button>
+                <hr style="border:none; height:3px; background-color:grey;width:90%;margin: 1% 5%;">
+                <div id="cities">
+                    <button class="row city-btn btn btn-secondary" onclick="searchCity('Atlanta')">Atlanta</button>
+                    <button class="row city-btn btn btn-secondary" onclick="searchCity('Seattle')">Seattle</button>
+                </div>
+            </div>
+
+            <div class="col rightpan">
+                <div class="col weather-box">
+                    <h2 class="row"><span id="data-city">---</span> &nbsp; (<span id="data-date">0/0/0</span>)<img id="cur-icon" style="height: 40px; width: 40px;"></h2>
+                    <p class="row">Temp: &nbsp;<span id="cur-temp">0</span>&degC</p>
+                    <p class="row">Wind: &nbsp;<span id="cur-wind">0</span>m/sec</p>
+                    <p class="row">Humidity: &nbsp;<span id="cur-hum">0</span>%</p>
+                    <p class="row">UV Index: &nbsp;<span id="cur-uvi">0</span></p>
+                </div>
+                <h2 class="row forecast-header">5-Day Forecast:</h2>
+                <div class="row">
+                    <div class="col forecast">
+                        <h3 class="row"><span id="forecast-date-1">0/0/0</span></h3>
+                        <img id="forecast-icon-1" style="height: 40px; width: 40px;">
+                        <p class="row">Temp: &nbsp;<span id="forecast-temp-1">0</span>&degC</p>
+                        <p class="row">Wind: &nbsp;<span id="forecast-wind-1">0</span>m/sec</p>
+                        <p class="row">Humidity: &nbsp;<span id="forecast-hum-1">0</span>%</p>
+                    </div>
+                    <div class="col forecast">
+                        <h3 class="row"><span id="forecast-date-2">0/0/0</span></h3>
+                        <img id="forecast-icon-2" style="height: 40px; width: 40px;">
+                        <p class="row">Temp: &nbsp;<span id="forecast-temp-2">0</span>&degC</p>
+                        <p class="row">Wind: &nbsp;<span id="forecast-wind-2">0</span>m/sec</p>
+                        <p class="row">Humidity: &nbsp;<span id="forecast-hum-2">0</span>%</p>
+                    </div>
+                    <div class="col forecast">
+                        <h3 class="row"><span id="forecast-date-3">0/0/0</span></h3>
+                        <img id="forecast-icon-3" style="height: 40px; width: 40px;">
+                        <p class="row">Temp: &nbsp;<span id="forecast-temp-3">0</span>&degC</p>
+                        <p class="row">Wind: &nbsp;<span id="forecast-wind-3">0</span>m/sec</p>
+                        <p class="row">Humidity: &nbsp;<span id="forecast-hum-3">0</span>%</p>
+                    </div>
+                    <div class="col forecast">
+                        <h3 class="row"><span id="forecast-date-4">0/0/0</span></h3>
+                        <img id="forecast-icon-4" style="height: 40px; width: 40px;">
+                        <p class="row">Temp: &nbsp;<span id="forecast-temp-4">0</span>&degC</p>
+                        <p class="row">Wind: &nbsp;<span id="forecast-wind-4">0</span>m/sec</p>
+                        <p class="row">Humidity: &nbsp;<span id="forecast-hum-4">0</span>%</p>
+                    </div>
+                    <div class="col forecast">
+                        <h3 class="row"><span id="forecast-date-5">0/0/0</span></h3>
+                        <img id="forecast-icon-5" style="height: 40px; width: 40px;">
+                        <p class="row">Temp: &nbsp;<span id="forecast-temp-5">0</span>&degC</p>
+                        <p class="row">Wind: &nbsp;<span id="forecast-wind-5">0</span>m/sec</p>
+                        <p class="row">Humidity: &nbsp;<span id="forecast-hum-5">0</span>%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+main {
+    padding: 1.5%;
+}
+
+.navbar-colors {
+    background-image: linear-gradient(to right, #3B6DC3, #230455);
+    color: white;
+}
+
+.leftpan {
+}
+
+.rightpan {
+}
+
+.weather-box {
+    border: solid 2px grey;
+    border-radius: 5px;
+    padding: 3.5vw;
+    margin-bottom: 4%;
+}
+
+.city-btn, .search-btn, .search-input {
+    width:90%;
+    margin: 1% 5%;
+}
+
+.search-label {
+    width:90%;
+    margin: 1% 5%;
+}
+
+.forecast-header{
+    padding: 1.5%;
+}
+
+.forecast {
+    background-color: #33475A;
+    padding: 3.5vw;
+    margin: 1vw;
+    color: whitesmoke;
+}
+.forecast h3 {
+    font-size: 3vw;
+}
+
+.forecast p {
+    font-size: 1.4vw;
+}
